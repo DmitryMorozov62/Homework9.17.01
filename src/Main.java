@@ -32,21 +32,21 @@ public class Main {
         integers[2] = 3;
 
         for (int i = 0; i < 3; i++) {
-            if (i != 2) {
-                System.out.print(integers[i] + ", ");
-            } else {
-                System.out.println(integers[i]);
+            System.out.print(integers[i]);
+            if (i != integers.length - 1) {
+                System.out.print(", ");
             }
         }
+        System.out.println();
 
         double[] fractional = {1.57, 7.654, 9.986};
         for (int i = 0; i < fractional.length; i++) {
-            if (i != 2) {
-                System.out.print(fractional[i] + ", ");
-            } else {
-                System.out.println(fractional[i]);
+            System.out.print(fractional[i]);
+            if (i != fractional.length - 1) {
+                System.out.print(", ");
             }
         }
+        System.out.println();
 
 
         int[] game = new int[4];
@@ -56,12 +56,12 @@ public class Main {
         game[3] = 20;
 
         for (int i = 0; i < game.length; i++) {
-            if (i != 3) {
-                System.out.print(game[i] + ", ");
-            } else {
-                System.out.println(game[i]);
+            System.out.print(game[i]);
+            if (i != game.length - 1) {
+                System.out.print(", ");
             }
         }
+        System.out.println();
     }
 
     public static void task3() {
@@ -74,12 +74,13 @@ public class Main {
         integers[2] = 3;
 
         for (int i = 2; i >= 0; i--) {
+            System.out.print(integers[i]);
             if (i != 0) {
-                System.out.print(integers[i] + ", ");
-            } else {
-                System.out.println(integers[i]);
+                System.out.print(", ");
             }
         }
+        System.out.println();
+
 
         double[] fractional = {1.57, 7.654, 9.986};
         for (int i = 2; i >= 0; i--) {
